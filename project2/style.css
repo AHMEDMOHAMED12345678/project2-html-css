@@ -1,0 +1,130 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--plain-font);
+    line-height: 1;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+:root {
+    --plain-font: 'Outfit', sans-serif;
+    --stylish-font: 'Young serif', sans-serif;
+    --light-gray-clr: hsl(30, 10%, 34%);
+    --dark-pink: hsl(332, 51%, 32%);
+    --light-pink: hsl(330, 100%, 98%);
+    --dark-brown: hsl(14, 45%, 36%);
+}
+
+.recipe-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-heading {
+    font-family: var(--stylish-font);
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.light-gray-text {
+    color: var(--light-gray-clr);
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: var(--plain-font);
+}
+
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container {
+    padding: 3rem;
+}
+
+.preparation-time-container {
+    background-color: var(--light-pink);
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.dark-pink-heading {
+    color: var(--dark-pink);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.time-list{
+    padding-left: 2rem;
+}
+
+.pd-top {
+    margin-top: 1rem;
+}
+
+.dark-gray-heading {
+    font-weight: 600;
+    color: var(--light-gray-clr);
+}
+
+.list-gap {
+    padding-left: 1.5rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+li::marker {
+    color: var(--dark-pink);
+}
+
+.brown-heading {
+    color: var(--dark-brown);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.ingredients {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--light-gray-clr);
+    padding-bottom: 2rem;
+    font-family: var(--stylish-font) !important;
+}
+
+.light-para {
+    font-weight: 400;
+}
+.brown-bold {
+    color: var(--dark-brown);
+    font-weight: 700;
+}
+
+.nutrition-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    margin-top: 1.2rem;
+    border-bottom: 1px solid var(--light-gray-clr);
+    align-items: left;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+}
+
+
+@media (min-width: 1000px) {
+    .recipe-img {
+        border-radius: 50px;
+        height: 450px;
+        object-fit: cover;
+        padding: 2rem;
+    }
+}
